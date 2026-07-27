@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(686, 098, 897);
+}
+h1 {
+    background-color: red;
+    color: rgb(686, 098, 897);
+}
+.estados-unidos{
+    color: blue;
+}
+h2 {
+    color: rgb(686, 098, 897);
+    background-color: red;
+}
+p {
+    color: blue;
+    color: red;
+}
