@@ -1,0 +1,13 @@
+body {
+    background-color:greenyellow;
+    color: green;
+    font-family:Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.destaque {
+    background-color:green;
+    color:red;
+     font-family: 's RegularLucida Sans', 'Lucida San', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     line-height: 1.6;
+}
