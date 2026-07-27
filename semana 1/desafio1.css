@@ -1,0 +1,35 @@
+a:hover{
+    color: aqua;
+}
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    background-color:black;
+}
+h1 {
+    color: green;
+}
+strong {
+    color: red;
+}
+h2 {
+    color: green;
+}
+p {
+    color: aliceblue;
+}
+h3 {
+    color: aliceblue;
+}
+ul {
+    color: aliceblue;
+}
+table {
+    color: aliceblue;
+}
+a {
+    color: aliceblue;
+}
+ol li {
+    color: aliceblue;
+}
