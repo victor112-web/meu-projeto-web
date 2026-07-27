@@ -1,0 +1,25 @@
+ody {
+    background-color: greenyellow;
+    color: green;
+    font-family:Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    background-color:greenyellow;
+    color:green;
+     font-family: 's RegularLucida Sans', 'Lucida San', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     line-height: 1.6;
+}
+ul {
+    background-color: green;
+    color: greenyellow;
+}
+ol {
+    background-color: green;
+    color: greenyellow;
+}
+p {
+    background-color: rgb(200, 253, 121);
+    color:green
+}
