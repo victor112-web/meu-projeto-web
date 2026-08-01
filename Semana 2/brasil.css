@@ -1,20 +1,20 @@
 body {
-    background-color: yellow;
-    color: blue;
+    background-color: gray;
+    color: #1A0A33;
 }
 h1 text {
-    color: blue;
+    color: #1A0A33;
 
 }
 h2 {
-    color: blue;
+    color: #1A0A33;
 }
 .brasil-mundo {
     color: red;
 }
 ol {
-    color: blue;
+    color: #1A0A33;
 }
 ul {
-    color: blue;
+    color: #1A0A33;
 }
