@@ -6,8 +6,11 @@ body {
 }
 
 h1 {
+    padding: 16px;
     background-color:aqua;
     color:black;
      font-family:'Lucida Sans', 'Lucida San', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      line-height: 1.6;
+     padding: 16px;
+     margin-bottom: 5px;
 }
