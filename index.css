@@ -1,0 +1,48 @@
+.cartao {
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px orange;
+    transition: 1.0s;
+}
+.cartao:hover {
+    box-shadow:0 4px 36px red ;
+    transform: translateY(-10px);
+
+}
+ h1 {
+    text-align: center;
+ }
+
+ header, main {
+        background-color: rgba(0, 0, 0, 0.5); 
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+}
+
+img {
+        width: 180px;
+        border-radius: 50%;
+ }
+body {
+        background-image: url("photo-1651833826115-7530e72ce504.avif"); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: whi
+
+        
+        color #00d9ff;
+        text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+}
