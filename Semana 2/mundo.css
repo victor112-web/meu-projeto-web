@@ -5,3 +5,9 @@ body {
 .taca-mundo {
     color: red;
 }
+h1 {
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
