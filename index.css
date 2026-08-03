@@ -1,5 +1,5 @@
 .cartao {
-    background-color: black;
+    background-color:black;
     border: 1px solid red;
     border-radius: 10px;
     margin-bottom: 16px;
@@ -15,6 +15,7 @@
 }
  h1 {
     text-align: center;
+    color: aliceblue;
  }
 
  header, main {
