@@ -1,0 +1,840 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f7faff;
+    color: #18324a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.header {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #e3ebf3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    background: #e9f3ff;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.logo div:last-child {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.logo-escola {
+    color: #63798d;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo strong {
+    color: #174d83;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #536b80;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1769aa;
+}
+
+.btn-header {
+    background: #1769aa;
+    color: white;
+
+    padding: 11px 20px;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background: #12578e;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background:
+        radial-gradient(circle at 85% 30%, #e6f3ff 0%, transparent 30%),
+        linear-gradient(135deg, #f8fbff 0%, #eef6fc 100%);
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+
+    padding: 80px 0;
+}
+
+.tag {
+    display: inline-block;
+
+    color: #1769aa;
+    background: #e6f2fc;
+
+    padding: 7px 13px;
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    color: #18324a;
+
+    margin: 22px 0;
+    letter-spacing: -2.5px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #1769aa;
+}
+
+.hero-text > p {
+    color: #62788b;
+    font-size: 17px;
+    max-width: 580px;
+}
+
+.hero-text strong {
+    color: #315b7c;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 32px;
+}
+
+.btn-primary {
+    background: #1769aa;
+    color: white;
+
+    padding: 14px 22px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(23, 105, 170, 0.18);
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: #12578e;
+}
+
+.btn-secondary {
+    color: #1769aa;
+    border: 1px solid #cbddea;
+
+    padding: 13px 22px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #f1f7fc;
+}
+
+
+/* =========================================
+   ILUSTRAÇÃO CIENTÍFICA
+========================================= */
+
+.science-card {
+    height: 420px;
+
+    background: linear-gradient(
+        145deg,
+        #dceefb,
+        #edf7fc
+    );
+
+    border-radius: 35px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 25px 60px rgba(35, 93, 130, 0.10);
+}
+
+.atom {
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nucleus {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #1769aa;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+
+    box-shadow:
+        0 0 0 10px rgba(23, 105, 170, 0.08),
+        0 10px 30px rgba(23, 105, 170, 0.2);
+}
+
+.orbit {
+    position: absolute;
+
+    border: 2px solid rgba(23, 105, 170, 0.25);
+
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 260px;
+    height: 90px;
+    transform: rotate(30deg);
+}
+
+.orbit-two {
+    width: 260px;
+    height: 90px;
+    transform: rotate(-30deg);
+}
+
+.electron {
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    background: #d9535f;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 10px rgba(217, 83, 95, 0.3);
+}
+
+.electron-one {
+    top: 8px;
+    right: 20px;
+}
+
+.electron-two {
+    bottom: 15px;
+    left: 12px;
+}
+
+.electron-three {
+    top: 60px;
+    left: -4px;
+}
+
+.floating-card {
+    position: absolute;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    padding: 13px 17px;
+
+    border-radius: 13px;
+
+    box-shadow: 0 12px 30px rgba(35, 75, 100, 0.10);
+
+    color: #315b7c;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px;
+}
+
+.card-top {
+    top: 55px;
+    right: 30px;
+}
+
+.card-bottom {
+    bottom: 55px;
+    left: 25px;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.about,
+.projects,
+.schedule {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-title span {
+    color: #d9535f;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    color: #18324a;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 12px 0;
+    letter-spacing: -1px;
+}
+
+.section-title h2 strong {
+    color: #1769aa;
+}
+
+.section-title p {
+    color: #718597;
+}
+
+
+/* =========================================
+   CARDS SOBRE
+========================================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature {
+    background: white;
+
+    padding: 32px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e4edf4;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(42, 87, 115, 0.08);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+.feature-icon.blue {
+    background: #e8f3fc;
+}
+
+.feature-icon.red {
+    background: #fbeaec;
+}
+
+.feature h3 {
+    color: #244862;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: #718597;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PROJETOS
+========================================= */
+
+.projects {
+    background: #f0f6fb;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    position: relative;
+
+    border: 1px solid #e3edf5;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(42, 87, 115, 0.08);
+}
+
+.project-number {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    color: #b6c9d7;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-icon {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #244862;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #718597;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #1769aa;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PROGRAMAÇÃO
+========================================= */
+
+.schedule-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.schedule h2 {
+    color: #18324a;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.schedule h2 strong {
+    color: #1769aa;
+}
+
+.schedule-content > div:first-child p {
+    color: #718597;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 25px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e1eaf1;
+}
+
+.schedule-item > span {
+    color: #d9535f;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 50px;
+}
+
+.schedule-item strong {
+    color: #315b7c;
+}
+
+.schedule-item p {
+    color: #8294a2;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PARTICIPAÇÃO
+========================================= */
+
+.join {
+    padding: 70px 0;
+}
+
+.join-box {
+    background: linear-gradient(
+        135deg,
+        #1769aa,
+        #245f8e
+    );
+
+    border-radius: 25px;
+
+    padding: 55px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.join-box::after {
+    content: "⚛";
+
+    position: absolute;
+
+    right: 30px;
+    bottom: -60px;
+
+    font-size: 190px;
+
+    opacity: 0.06;
+}
+
+.join-box span {
+    color: #cce6fa;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.join-box h2 {
+    font-size: 34px;
+    line-height: 1.2;
+
+    max-width: 550px;
+
+    margin: 10px 0;
+}
+
+.join-box p {
+    color: #d6e8f5;
+    font-size: 14px;
+}
+
+.btn-white {
+    background: white;
+    color: #1769aa;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.footer {
+    background: #132f45;
+    color: white;
+
+    padding: 35px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer strong {
+    font-size: 14px;
+}
+
+.footer p {
+    color: #a9c0d0;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right span {
+    color: #7894a7;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .science-card {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .features,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .join-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav {
+        min-height: 68px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+    }
+
+    .science-card {
+        height: 330px;
+    }
+
+    .about,
+    .projects,
+    .schedule {
+        padding: 70px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .schedule h2 {
+        font-size: 32px;
+    }
+
+    .join-box {
+        padding: 40px 30px;
+    }
+
+    .join-box h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+}
