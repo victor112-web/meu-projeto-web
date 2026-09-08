@@ -1,0 +1,476 @@
+
+/* =========================================
+   PÁGINA SOBRE A FEIRA
+========================================= */
+
+.about-hero {
+    padding: 110px 0;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            #dceefb,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fbff,
+            #edf6fc
+        );
+
+    text-align: center;
+}
+
+.about-hero h1 {
+    color: #18324a;
+
+    font-size: clamp(42px, 5vw, 62px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    margin: 20px 0;
+}
+
+.about-hero h1 span {
+    color: #1769aa;
+}
+
+.about-hero p {
+    color: #6d8293;
+
+    max-width: 620px;
+
+    margin: auto;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.about-intro {
+    padding: 100px 0;
+
+    background: white;
+}
+
+.about-intro-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.about-image {
+    min-height: 430px;
+
+    border-radius: 25px;
+
+    background: #e8f3fb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: #d8ebf9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 0 0 20px rgba(23, 105, 170, 0.04);
+}
+
+.section-label {
+    color: #d9535f;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.about-text h2 {
+    color: #18324a;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin: 15px 0 25px;
+}
+
+.about-text h2 strong {
+    color: #1769aa;
+}
+
+.about-text p {
+    color: #6f8393;
+
+    font-size: 15px;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   OBJETIVOS
+========================================= */
+
+.objectives {
+    padding: 100px 0;
+
+    background: #f2f7fb;
+}
+
+.objectives-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.objective-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e1ebf3;
+
+    transition: 0.3s;
+}
+
+.objective-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(42, 87, 115, 0.08);
+}
+
+.objective-icon {
+    width: 50px;
+    height: 50px;
+
+    background: #e8f3fb;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 18px;
+}
+
+.objective-card h3 {
+    color: #244862;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.objective-card p {
+    color: #778b9a;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   COMO FUNCIONA
+========================================= */
+
+.how-it-works {
+    padding: 100px 0;
+
+    background: white;
+}
+
+.steps {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.step {
+    display: grid;
+
+    grid-template-columns: 65px 1fr;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e4edf3;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: #e8f3fb;
+
+    color: #1769aa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.step h3 {
+    color: #244862;
+
+    margin-bottom: 5px;
+}
+
+.step p {
+    color: #788c9b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ÁREAS DA CIÊNCIA
+========================================= */
+
+.science-areas {
+    padding: 100px 0;
+
+    background: #f2f7fb;
+}
+
+.areas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.area-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 17px;
+
+    border: 1px solid #e1ebf3;
+
+    transition: 0.3s;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #cbdfea;
+}
+
+.area-card > span {
+    font-size: 30px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.area-card h3 {
+    color: #244862;
+
+    margin-bottom: 5px;
+}
+
+.area-card p {
+    color: #7b8f9e;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MENSAGEM
+========================================= */
+
+.message {
+    padding: 90px 0;
+
+    background: white;
+}
+
+.message-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 60px 50px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1769aa,
+            #245f8e
+        );
+
+    color: white;
+
+    box-shadow:
+        0 20px 50px rgba(23, 105, 170, 0.15);
+}
+
+.message-icon {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.message-box > span {
+    color: #cce6fa;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.message-box h2 {
+    max-width: 650px;
+
+    margin: 18px auto;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+}
+
+.message-box p {
+    max-width: 650px;
+
+    margin: 0 auto 20px;
+
+    color: #d6e8f5;
+
+    font-size: 14px;
+}
+
+.message-box strong {
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-image {
+        min-height: 350px;
+    }
+
+    .objectives-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 80px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 42px;
+    }
+
+    .about-intro,
+    .objectives,
+    .how-it-works,
+    .science-areas {
+        padding: 70px 0;
+    }
+
+    .about-text h2 {
+        font-size: 31px;
+    }
+
+    .objectives-grid,
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+    }
+
+    .message-box {
+        padding: 45px 25px;
+    }
+
+    .message-box h2 {
+        font-size: 26px;
+    }
+}
